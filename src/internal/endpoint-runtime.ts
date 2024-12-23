@@ -117,9 +117,9 @@ export const createEndpointRuntime = (
             hops: [],
           })
 
-          if (err && !noHandlerFoundError)
-            // eslint-disable-next-line no-unsafe-finally
-            throw reply
+          if (err && !noHandlerFoundError) {
+            console.error(reply)
+          }
         }
       }
 
